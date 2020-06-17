@@ -1,0 +1,70 @@
+{
+  "homepage": "https://magizchi.github.io/MyAnimeList_UI/",
+  "name": "myanimelist",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "^24.9.0",
+    "@types/node": "^12.12.25",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-modal": "^3.10.4",
+    "autoprefixer": "^9.7.4",
+    "classnames": "^2.2.6",
+    "gh-pages": "^2.2.0",
+    "js-cookie": "^2.2.1",
+    "react": "^16.12.0",
+    "react-collapse": "^5.0.1",
+    "react-dom": "^16.12.0",
+    "react-modal": "^3.11.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.0",
+    "react-slick": "^0.25.2",
+    "react-toastify": "^5.5.0",
+    "tailwindcss": "^1.2.0",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build:css": "postcss src/tailwind.css -o src/index.css",
+    "watch:css": "postcss src/tailwind.css -o src/index.css",
+    "start": "react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.10",
+    "@types/js-cookie": "^2.2.4",
+    "@types/react-collapse": "^5.0.0",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/react-slick": "^0.23.4",
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "@typescript-eslint/parser": "^2.17.0",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "postcss-cli": "^7.1.1"
+  }
+}
