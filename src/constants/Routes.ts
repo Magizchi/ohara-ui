@@ -1,12 +1,12 @@
 enum Routes {
-  LOGIN = "/myanimelist/login",
-  SIGNIN = "/myanimelist/signin",
-  HOME = "/myanimelist/",
-  TOPANIME = "/myanimelist/top/anime",
-  TOPMANGA = "/myanimelist/top/manga",
-  ANIME = "/myanimelist/top/anime/:id",
-  MANGA = "/myanimelist/top/manga/:id",
-  ERROR = "/myanimelist/*"
+  LOGIN = "/login",
+  SIGNIN = "/signin",
+  HOME = "/",
+  TOPANIME = "/top/anime",
+  TOPMANGA = "/top/manga",
+  ANIME = "/top/anime/:id",
+  MANGA = "/top/manga/:id",
+  ERROR = "/*",
 }
 
 export default Routes;
