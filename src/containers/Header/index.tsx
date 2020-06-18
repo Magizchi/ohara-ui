@@ -1,23 +1,21 @@
 //lib
 //context
 import Routes from "constants/Routes";
-import { CookiesContext } from "contexts/Cookies";
-import Cookies from "js-cookie";
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Header = () => {
-  const { cookie, setCookie } = useContext(CookiesContext);
+  // const { cookie, setCookie } = useContext(CookiesContext);
 
-  const notify = () => {
-    toast.info("Disconnected !", {
-      position: toast.POSITION.TOP_CENTER,
-    });
-    Cookies.remove("token");
-    setCookie("");
-  };
+  // const notify = () => {
+  //   toast.info("Disconnected !", {
+  //     position: toast.POSITION.TOP_CENTER,
+  //   });
+  //   Cookies.remove("token");
+  //   setCookie("");
+  // };
 
   return (
     <>
