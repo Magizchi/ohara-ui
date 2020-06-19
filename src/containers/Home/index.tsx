@@ -1,7 +1,6 @@
-import Ellipsis from "assets/svg/Ellipsis.svg";
+import LoadingSVG from "assets/svg/Ellipsis.svg";
 import Card from "components/molecules/Card";
 import API from "constants/API";
-import AnimeInfo from "containers/Home/AnimeInfo";
 import Anime, { animeBuilder } from "models/Anime";
 import Home, { homeBuilder } from "models/Home";
 import Manga, { mangaBuilder } from "models/Manga";
@@ -11,6 +10,7 @@ import Slider from "react-slick";
 import { formatAnime } from "utils/anime";
 import { formatCard } from "utils/card";
 import { formatManga } from "utils/manga";
+import AnimeInfo from "./AnimeInfo";
 import MangaInfo from "./MangaInfo";
 
 const HomePage = () => {
@@ -126,15 +126,15 @@ const HomePage = () => {
     );
   } else {
     return (
-      <body className="flex items-center justify-center w-full h-full">
+      <main className="flex items-center justify-center w-full h-full">
         <img
           className="bg-no-repeat"
-          src={Ellipsis}
+          src={LoadingSVG}
           alt="Rolling"
           height="138"
           width="138"
         />
-      </body>
+      </main>
     );
   }
 };

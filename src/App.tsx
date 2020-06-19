@@ -14,9 +14,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 const App = () => {
   return (
-    <main className="flex flex-col justify-between h-screen bg-darkblue-500">
-      <Router>
-        <Authentication>
+    <Router>
+      <Authentication>
+        <main className="flex flex-col justify-between h-screen bg-darkblue-500">
           <Header />
           <Switch>
             {/* <Route exact path={Routes.LOGIN} component={LogIn} /> */}
@@ -29,9 +29,9 @@ const App = () => {
             <Route path={Routes.ERROR} component={Error404} />
           </Switch>
           <Footer />
-        </Authentication>
-      </Router>
-    </main>
+        </main>
+      </Authentication>
+    </Router>
   );
 };
 
