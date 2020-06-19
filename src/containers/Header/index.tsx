@@ -42,13 +42,13 @@ const Header = () => {
           <div>
             <a
               href="#anime"
-              className="mr-5 font-bold text-center text-orange-600 bg-transparent border-b-2 border-transparent hover:border-orange-500 hover:text-black"
+              className="mr-5 font-bold text-center text-orange-600 bg-transparent border-b-2 border-transparent hover:border-orange-500"
             >
               Anime
             </a>
             <a
               href="#manga"
-              className="mr-5 font-bold text-center text-orange-600 bg-transparent border-b-2 border-transparent hover:border-orange-500 hover:text-black"
+              className="mr-5 font-bold text-center text-orange-600 bg-transparent border-b-2 border-transparent hover:border-orange-500"
             >
               Manga
             </a>
