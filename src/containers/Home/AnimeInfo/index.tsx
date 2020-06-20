@@ -1,6 +1,7 @@
 import Anime from "models/Anime";
 import React, { FunctionComponent, useEffect, useState } from "react";
 import { Collapse } from "react-collapse";
+import { Link } from "react-router-dom";
 
 interface AnimeInfoProps {
   anime: Anime;
@@ -83,6 +84,14 @@ const AnimeInfo: FunctionComponent<FunctionProps> = ({ anime, onClick }) => {
             </Collapse>
           </div>
         </aside>
+      </div>
+      <div className="flex justify-end">
+        <Link
+          to={"/my-anime-list-ui/top/anime/" + anime.id}
+          className="text-sm text-orange-500"
+        >
+          more info...
+        </Link>
       </div>
     </article>
   );

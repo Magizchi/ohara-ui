@@ -7,8 +7,11 @@ export const formatAnime = (props: any): Anime => ({
   score: props.score,
   synopsis: props.synopsis,
   episodes: props.episodes,
-  // genres: props.genres.map((genre: any) => genre.name),
+  genres: props.genres.map((genre: any) => genre.name),
   opening: props.opening_themes,
   ending: props.ending_themes,
   id: props.mal_id,
+  published: props.aired.string,
+  duration: props.duration,
+  premiered: props.premiered,
 });

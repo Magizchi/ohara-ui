@@ -1,5 +1,6 @@
 import Manga from "models/Manga";
 import React, { FunctionComponent } from "react";
+import { Link } from "react-router-dom";
 
 interface MangaInfoProps {
   manga: Manga;
@@ -31,6 +32,11 @@ const MangaInfo: FunctionComponent<FunctionProps> = ({ manga, onClick }) => {
           <p className="mr-5">Synopsis: </p>
           <p>{manga.synopsis}</p>
         </div>
+      </div>
+      <div className="flex justify-end">
+        <Link to="/" className="text-sm text-orange-500">
+          more info...
+        </Link>
       </div>
     </article>
   );
