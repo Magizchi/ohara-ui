@@ -24,7 +24,7 @@ const HomePage = () => {
   const [MangaCollapse, setMangaCollapse] = useState<boolean>(false);
 
   useEffect(() => {
-    fetch(process.env.REACT_APP_PATH + API.HOME, { mode: "cors" })
+    fetch(PATH + API.HOME, { mode: "cors" })
       .then((data) => data.json())
       .then((res) =>
         setHomeInfo({
