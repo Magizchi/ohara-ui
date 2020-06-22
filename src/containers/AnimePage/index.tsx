@@ -35,15 +35,17 @@ const AnimePage = () => {
     };
     getAnime();
   }, [id, PATH]);
-  console.log(anime);
   return (
     <main className="flex flex-col items-center pt-12">
       <section className="container flex flex-col">
-        <Link to="/my-anime-list-ui/">
-          <a className="mr-5 font-bold text-center text-orange-600 bg-transparent border-b-2 border-transparent hover:border-orange-500">
-            <i className="mr-1 fas fa-arrow-left " /> Back to Home
-          </a>
-        </Link>
+        <div>
+          <Link
+            to="/my-anime-list-ui/"
+            className="w-auto mr-5 font-bold text-center text-orange-600 bg-transparent border-b-2 border-transparent hover:border-orange-500"
+          >
+            <i className="mr-1 fas fa-arrow-left" /> Back to Home
+          </Link>
+        </div>
         <div className="flex">
           <aside className="pt-3">
             <img src={anime.image} alt={anime.title} className="w-56 h-auto" />
