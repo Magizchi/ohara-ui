@@ -1,10 +1,10 @@
 enum Routes {
-  LOGIN = "/my-anime-list-ui/login",
-  SIGNIN = "/my-anime-list-ui/signin",
-  HOME = "/my-anime-list-ui/",
-  ANIMEALLINFO = "/my-anime-list-ui/top/anime/:id",
-  TOPMANGA = "/my-anime-list-ui/top/manga",
-  ERROR = "/my-anime-list-ui/*",
+  LOGIN = "ohara-ui/login",
+  SIGNIN = "ohara-ui/signin",
+  HOME = "ohara-ui/",
+  ANIMEALLINFO = "ohara-ui/top/anime/:id",
+  TOPMANGA = "ohara-ui/top/manga",
+  ERROR = "ohara-ui/*",
 }
 
 export default Routes;
