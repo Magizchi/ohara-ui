@@ -1,3 +1,4 @@
+import Routes from "constants/Routes";
 import Manga from "models/Manga";
 import React, { FunctionComponent } from "react";
 import { Link } from "react-router-dom";
@@ -34,7 +35,10 @@ const MangaInfo: FunctionComponent<FunctionProps> = ({ manga, onClick }) => {
         </div>
       </div>
       <div className="flex justify-end">
-        <Link to="/" className="text-sm text-orange-500">
+        <Link
+          to={Routes.MANGA_INFO + manga.id}
+          className="text-sm text-orange-500"
+        >
           more info...
         </Link>
       </div>

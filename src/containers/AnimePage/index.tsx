@@ -1,4 +1,3 @@
-//constants
 import API from "constants/API";
 import Routes from "constants/Routes";
 import Anime, { animeBuilder } from "models/Anime";
@@ -28,7 +27,7 @@ const AnimePage = () => {
 
   useEffect(() => {
     const getAnime = async () => {
-      await fetch(PATH + API.ANIMEDETAIL + "/" + id)
+      await fetch(PATH + API.ANIME_DETAIL + "/" + id)
         .then((data) => data.json())
         .then((res) => {
           setAnime(formatAnime(res.response));
@@ -36,6 +35,7 @@ const AnimePage = () => {
     };
     getAnime();
   }, [id, PATH]);
+
   return (
     <main className="flex flex-col items-center pt-12">
       <section className="container flex flex-col">

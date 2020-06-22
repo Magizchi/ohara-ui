@@ -4,7 +4,8 @@ enum API {
   HOME = "api/home",
   TOPANIME = "api/top/anime",
   TOPMANGA = "api/top/manga",
-  ANIMEDETAIL = "api/top/anime",
+  ANIME_DETAIL = "api/top/anime",
+  MANGA_DETAIL = "api/top/manga",
 }
 
 export default API;
