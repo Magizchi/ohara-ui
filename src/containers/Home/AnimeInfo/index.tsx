@@ -1,3 +1,4 @@
+import Routes from "constants/Routes";
 import Anime from "models/Anime";
 import React, { FunctionComponent, useEffect, useState } from "react";
 import { Collapse } from "react-collapse";
@@ -15,7 +16,6 @@ const AnimeInfo: FunctionComponent<FunctionProps> = ({ anime, onClick }) => {
   const [isCollapse, setIsCollapse] = useState<boolean>(false);
 
   useEffect(() => {
-    console.log("la");
     if (anime.trailer === null) {
       setIsCollapse(true);
     } else if (anime.trailer !== null) {
@@ -87,7 +87,7 @@ const AnimeInfo: FunctionComponent<FunctionProps> = ({ anime, onClick }) => {
       </div>
       <div className="flex justify-end">
         <Link
-          to={"/my-anime-list-ui/top/anime/" + anime.id}
+          to={Routes.ANIME_INFO + anime.id}
           className="text-sm text-orange-500"
         >
           more info...

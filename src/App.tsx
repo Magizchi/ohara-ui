@@ -17,12 +17,12 @@ const App = () => {
           <Switch>
             {/* <Route exact path={Routes.LOGIN} component={LogIn} /> */}
             {/* <Route exact path={Routes.SIGNIN} component={SignIn} /> */}
-            <Route exact path={Routes.HOME} component={Home} />
-            <Route exact path={Routes.ANIMEALLINFO} component={AnimeAllInfo} />
+            <Route exact path={Routes.HOME_PAGE} component={Home} />
+            <Route exact path={Routes.ANIME_PAGE} component={AnimeAllInfo} />
             {/* <Route exact path={Routes.ANIME} component={AnimeDetail} /> */}
             {/* <Route exact path={Routes.TOPMANGA} component={TopManga} /> */}
             {/* <Route exact path={Routes.MANGA} component={MangaDetail} /> */}
-            <Route path={Routes.ERROR} component={Error404} />
+            <Route path={Routes.ERROR_PAGE} component={Error404} />
           </Switch>
           <Footer />
         </main>

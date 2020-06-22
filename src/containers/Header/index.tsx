@@ -23,13 +23,13 @@ const Header = () => {
         <div className="container flex items-center justify-between w-full">
           <h1>
             <Link
-              to={Routes.HOME}
+              to={Routes.HOME_PAGE}
               className="hidden w-full text-4xl text-orange-500 sm:block"
             >
               MYANIMELIST
             </Link>
             <Link
-              to={Routes.HOME}
+              to={Routes.HOME_PAGE}
               className="w-full text-4xl text-orange-500 sm:hidden"
             >
               ML

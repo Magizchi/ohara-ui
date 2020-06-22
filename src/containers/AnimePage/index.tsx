@@ -1,5 +1,6 @@
 //constants
 import API from "constants/API";
+import Routes from "constants/Routes";
 import Anime, { animeBuilder } from "models/Anime";
 import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
@@ -40,7 +41,7 @@ const AnimePage = () => {
       <section className="container flex flex-col">
         <div>
           <Link
-            to="/my-anime-list-ui/"
+            to={Routes.HOME_PAGE}
             className="w-auto mr-5 font-bold text-center text-orange-600 bg-transparent border-b-2 border-transparent hover:border-orange-500"
           >
             <i className="mr-1 fas fa-arrow-left" /> Back to Home
