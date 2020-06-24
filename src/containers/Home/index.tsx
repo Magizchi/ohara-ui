@@ -70,7 +70,7 @@ const HomePage = () => {
       slidesToScroll: 6,
     };
     return (
-      <main className="flex flex-col items-center bg-darkblue-500">
+      <main className="flex flex-col items-center justify-center min-h-screen bg-darkblue-500">
         <section id="#anime" className="container flex flex-col mb-8 ">
           <h2 className="text-lg font-bold text-orange-500">Top Anime</h2>
           <Collapse isOpened={animeCollapse}>
@@ -124,7 +124,7 @@ const HomePage = () => {
     );
   } else {
     return (
-      <main className="flex items-center justify-center w-full h-full">
+      <main className="flex items-center justify-center w-full h-screen bg-darkblue-500">
         <img
           className="bg-no-repeat"
           src={LoadingSVG}

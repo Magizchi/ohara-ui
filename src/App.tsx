@@ -13,20 +13,18 @@ const App = () => {
   return (
     <Router>
       <Authentication>
-        <main className="flex flex-col justify-between h-screen bg-darkblue-500">
-          <Header />
-          <Switch>
-            {/* <Route exact path={Routes.LOGIN} component={LogIn} /> */}
-            {/* <Route exact path={Routes.SIGNIN} component={SignIn} /> */}
-            <Route exact path={Routes.HOME_PAGE} component={Home} />
-            <Route exact path={Routes.ANIME_PAGE} component={AnimePage} />
-            <Route exact path={Routes.MANGA_PAGE} component={MangaPage} />
-            {/* <Route exact path={Routes.ANIME} component={AnimeDetail} /> */}
-            {/* <Route exact path={Routes.MANGA} component={MangaDetail} /> */}
-            <Route path={Routes.ERROR_PAGE} component={Error404} />
-          </Switch>
-          <Footer />
-        </main>
+        <Header />
+        <Switch>
+          {/* <Route exact path={Routes.LOGIN} component={LogIn} /> */}
+          {/* <Route exact path={Routes.SIGNIN} component={SignIn} /> */}
+          <Route exact path={Routes.HOME_PAGE} component={Home} />
+          <Route exact path={Routes.ANIME_PAGE} component={AnimePage} />
+          <Route exact path={Routes.MANGA_PAGE} component={MangaPage} />
+          {/* <Route exact path={Routes.ANIME} component={AnimeDetail} /> */}
+          {/* <Route exact path={Routes.MANGA} component={MangaDetail} /> */}
+          <Route path={Routes.ERROR_PAGE} component={Error404} />
+        </Switch>
+        <Footer />
       </Authentication>
     </Router>
   );
