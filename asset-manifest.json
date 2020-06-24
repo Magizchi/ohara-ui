@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ohara-ui/static/css/main.8f7071e8.chunk.css",
+    "main.js": "/ohara-ui/static/js/main.3df59267.chunk.js",
+    "main.js.map": "/ohara-ui/static/js/main.3df59267.chunk.js.map",
+    "runtime-main.js": "/ohara-ui/static/js/runtime-main.555ea948.js",
+    "runtime-main.js.map": "/ohara-ui/static/js/runtime-main.555ea948.js.map",
+    "static/css/2.5dbdccff.chunk.css": "/ohara-ui/static/css/2.5dbdccff.chunk.css",
+    "static/js/2.3afde552.chunk.js": "/ohara-ui/static/js/2.3afde552.chunk.js",
+    "static/js/2.3afde552.chunk.js.map": "/ohara-ui/static/js/2.3afde552.chunk.js.map",
+    "index.html": "/ohara-ui/index.html",
+    "precache-manifest.208abbd330b456552086fc06067fe618.js": "/ohara-ui/precache-manifest.208abbd330b456552086fc06067fe618.js",
+    "service-worker.js": "/ohara-ui/service-worker.js",
+    "static/css/2.5dbdccff.chunk.css.map": "/ohara-ui/static/css/2.5dbdccff.chunk.css.map",
+    "static/css/main.8f7071e8.chunk.css.map": "/ohara-ui/static/css/main.8f7071e8.chunk.css.map",
+    "static/js/2.3afde552.chunk.js.LICENSE.txt": "/ohara-ui/static/js/2.3afde552.chunk.js.LICENSE.txt",
+    "static/media/Ellipsis.svg": "/ohara-ui/static/media/Ellipsis.d0e3870e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.555ea948.js",
+    "static/css/2.5dbdccff.chunk.css",
+    "static/js/2.3afde552.chunk.js",
+    "static/css/main.8f7071e8.chunk.css",
+    "static/js/main.3df59267.chunk.js"
+  ]
+}
