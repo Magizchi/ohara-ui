@@ -82,21 +82,19 @@ const HomePage = () => {
               }}
             />
           </Collapse>
-          <ul>
-            <Slider className="text-black" {...settings}>
-              {homeInfo.anime.map((m, index: number) => {
-                return (
-                  <Card
-                    key={index}
-                    image={m.image}
-                    title={m.title}
-                    id={m.id}
-                    onClick={setAnimeId}
-                  />
-                );
-              })}
-            </Slider>
-          </ul>
+          <Slider className="text-black" {...settings}>
+            {homeInfo.anime.map((m, index: number) => {
+              return (
+                <Card
+                  key={index}
+                  image={m.image}
+                  title={m.title}
+                  id={m.id}
+                  onClick={setAnimeId}
+                />
+              );
+            })}
+          </Slider>
         </section>
         <section id="#manga" className="container">
           <h2 className="text-lg font-bold text-orange-500">Top Manga</h2>

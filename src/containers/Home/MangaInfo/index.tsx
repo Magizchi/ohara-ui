@@ -18,7 +18,7 @@ const MangaInfo: FunctionComponent<FunctionProps> = ({ manga, onClick }) => {
         <i
           onClick={() => onClick()}
           className="fa-2x fas fa-times hover:text-orange-600"
-        ></i>
+        />
       </div>
       <div className="flex w-full">
         <div className="w-4/12 mr-10">

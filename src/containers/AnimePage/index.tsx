@@ -37,8 +37,8 @@ const AnimePage = () => {
   }, [id, PATH]);
 
   return (
-    <main className="flex flex-col items-center pt-12">
-      <section className="container flex flex-col">
+    <section className="flex flex-col items-center pt-12">
+      <div className="container flex flex-col">
         <div>
           <Link
             to={Routes.HOME_PAGE}
@@ -117,8 +117,8 @@ const AnimePage = () => {
             </ul>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 };
 

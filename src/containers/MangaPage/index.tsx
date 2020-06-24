@@ -7,7 +7,6 @@ import { formatManga } from "utils/manga";
 
 const MangaPage = () => {
   const [manga, setManga] = useState<Manga>(mangaBuilder());
-  const [modalIsOpen, setIsOpen] = useState<boolean>(false);
   const { id } = useParams();
   const PATH = process.env.REACT_APP_PATH;
 
@@ -23,8 +22,8 @@ const MangaPage = () => {
   }, [id, PATH]);
 
   return (
-    <main className="flex justify-center h-full pt-12 ">
-      <section className="container flex flex-col">
+    <section className="flex justify-center h-full pt-12 ">
+      <div className="container flex flex-col">
         <div>
           <Link
             to={Routes.HOME_PAGE}
@@ -42,10 +41,6 @@ const MangaPage = () => {
               <h1 className="m-0 text-3xl font-bold text-orange-500">
                 {manga.title}
               </h1>
-              <i
-                onClick={() => setIsOpen(true)}
-                className="ml-2 text-red-700 cursor-pointer fab fa-youtube fa-2x"
-              ></i>
             </div>
             <p className="mb-1 text-stars-500">
               <span className="mr-2 text-orange-500">Score:</span>
@@ -64,8 +59,8 @@ const MangaPage = () => {
             </p>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 };
 

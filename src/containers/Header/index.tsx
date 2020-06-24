@@ -26,7 +26,7 @@ const Header = () => {
               to={Routes.HOME_PAGE}
               className="hidden w-full text-4xl text-orange-500 sm:block"
             >
-              MYANIMELIST
+              Ohara
             </Link>
             <Link
               to={Routes.HOME_PAGE}
