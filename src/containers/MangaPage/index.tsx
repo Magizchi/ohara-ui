@@ -22,7 +22,7 @@ const MangaPage = () => {
   }, [id, PATH]);
 
   return (
-    <section className="flex justify-center h-full pt-12 ">
+    <section className="flex justify-center h-screen pt-12 bg-darkblue-500 ">
       <div className="container flex flex-col">
         <div>
           <Link
